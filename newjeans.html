@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="nj/bunny.gif" type="image/x-icon">
+    <title>NewJeans</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+img{
+    border: 1px solid white;
+}
+body{
+    animation: fadeIn 1s;
+}
+ @keyframes fadeIn {
+        from {
+            background: #4b588f;
+             opacity: 5%;
+     }
+        to {
+             opacity: 100%;
+     }
+     }
+/*--------------BACKGROUND--------------*/
+.container{
+    height: 100vh;
+    background-image: url(nj/NEWJEANS.jfif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: cover;
+}
+
+/* #icon{
+    margin-left: 1000px;
+} */
+
+/*--------------NAVBAR----------------*/
+.navbar{
+    height: 55px;
+    background-color: #4b588f;
+    margin: auto;
+    padding: 13px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none; 
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+} 
+.navbar ul li:hover{
+    transition: 0.1s;
+    transform: scale(1.1);
+    z-index: 2;
+    /* border-bottom: 2px solid violet;  */
+}
+
+/*----------CENTER----------*/
+.center{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4); 
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 100px;
+    margin: 120px 300px;
+    height: 320px;
+}
+
+/*---------BUTTON---------*/
+#btn{
+   text-align: center;
+   font-size: 25px; 
+   border: 1px solid white;
+   border-radius: 10px;
+   background: #4b588f;
+   color: white;
+   padding: 10px;
+   cursor: pointer;
+}
+#btn a{
+    text-decoration: none;
+}
+#btn:hover{
+    transition: 0.1s;
+    transform: scale(1.1);
+    z-index: 2;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="navbar">
+        <a href="index.html">
+        <img src="nj/bunny.gif" height="55px" width="90px" id="icon"></img>
+        </a>
+        <ul>
+            <li><a href="newjeans.html">Home</a></li>
+            <li><a href="members.html">NJ Members</a></li>
+            <li><a href="nj_songs.html">NJ Songs</a></li>
+            <li><a href="nj_mv.html">NJ MV's</a></li>
+            <li><a href="about_nj.html">About NJ</a></li>
+        </ul>
+</div>
+<div class="center">
+
+<h1>NEW JEANS</h1>
+
+<a href="members.html"><button id="btn">See More</button></a>
+
+</div>
+</div>
+</body>
+</html>
