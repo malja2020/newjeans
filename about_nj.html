@@ -93,7 +93,35 @@ h3{
 img{
     border: 1px solid white;
 }
+@media only screen and (max-width: 600px) {
+  .navbar {
+    height: 70px;
+  }
 
+  .navbar img {
+    height: 50px;
+    width: 80px;
+  }
+
+  .navbar ul li {
+    margin: 0 10px;
+  }
+
+  .navbar ul li a {
+    font-size: 16px;
+  }
+
+  img{
+    height: 300px;
+    width: 450px;
+  }
+ 
+  /* CSS rules for phones go here */
+  .border {
+    margin: 50px 20px;
+    width: calc(100% - 40px);
+  }
+}
 </style>
 <body>
      <div class="container">
